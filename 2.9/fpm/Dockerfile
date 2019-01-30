@@ -20,8 +20,10 @@ RUN apk --update --no-cache add \
   
 # Install additional image tools
 RUN apk --update --no-cache add \
-    optipng \
-    gifsicle
+    exiftool \
+    ffmpeg \
+    libjpeg-turbo-utils \
+    poppler-utils
 
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php
